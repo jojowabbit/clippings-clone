@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="text-gray-900 antialiased leading-tight">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Design Inspiration & Contents Reference : https://clippings.com/ -->
+    <!-- Icons From Zondicons Reference: https://www.zondicons.com/ -->
+    <!-- Styling Guide
+    1. positioning/visibility 2. box model 3. borders 4. backgrounds 5. typography 6. other visual adjustments) -->
+    <title>Clippings Tailwind</title>
+</head>
+<body class="min-h-screen bg-gray-100">
+    <header class="flex flex-wrap justify-between items-center h-16 md:px-6 py-4">
+        <!-- Logo -->
+        <a href="#" id="logo" class="pl-6 md:pl-0 text-3xl font-semibold">Clippings</a>
+        <!-- Menu Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="menu" class="md:hidden h-6 pr-6 pcursor-pointer"><title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        <!-- Nav Bar -->
+        <nav id="nav" class="-translate-x-full md:translate-x-0 opacity-0 md:opacity-100 pointer-events-none md:pointer-events-auto transform transition-all duration-300 flex flex-col md:flex-row md:justify-end items-start w-screen md:w-auto h-0 md:h-auto lg:w-2/3 bg-gray-100 px-6 py-4 md:px-0 md:py-0 md:bg-transparent">
+            <a href="#" class="ml-1 px-3 py-2 text-3xl md:text-base font-semibold">Platform</a>
+            <a href="#" class="ml-1 px-3 py-2 text-3xl md:text-base font-semibold">Sourcing</a>
+            <a href="#" class="ml-1 px-3 py-2 text-3xl md:text-base font-semibold">Services</a>
+            <a href="#" class="ml-1 px-3 py-2 md:border-2 md:rounded-sm md:border-gray-400 text-3xl md:text-base font-semibold">Book a demo</a>
+            <div class="mt-20 md:mt-0 px-3 pb-6 md:py-2">
+                <a href="#" class="ml-1 px-3 py-2 rounded-full bg-gray-900 text-gray-200 text-2xl md:text-base font-semibold">Sign up</a>
+                <a href="#" class="ml-1 px-3 md:pl-3 md:pr-0 py-2 text-2xl md:text-base font-semibold">Log in</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section class="w-screen min-h-full -mt-16">
+        <div class="flex flex-col sm:flex-row sm: justify-center items-center mt-16 md:mt-0">
+
+            <!-- Hero Text -->
+            <div class="sm:w-1/2 md:mt-16 py-4 px-6">
+                <h1 class="text-3xl lg:text-5xl font-semibold">Furniture and lighting sourcing the smart way</h1>
+                <p class="py-4 text-gray-700">Manage your interior project on one platform with access to millions of design products, easy-to-use specification tools and personal service.</p>
+                <div class="py-4">
+                    <a href="#" class="ml-1 px-3 py-2 rounded-full bg-gray-900 text-gray-200 font-semibold">Sign up</a>
+                    <a href="#" class="ml-1 px-3 py-2 font-semibold">Book a demo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="sm:w-1/2 lg:w-2/3">
+                <img class="w-full object-contain md:object-cover object-center" src="./images/hero.jpg" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+    <!-- Work With Us -->
+    <section class="px-6 py-4">
+        <div>
+            <p class="font-bold text-gray-600">Work with us</p>
+            <h1 class="text-3xl lg:text-5xl font-semibold">Planning, specification and logisticsy</h1>
+            <h1 class="text-3xl lg:text-5xl font-semibold">— all in one place</h1>
+        </div>
+        <!-- Text-Box -->
+        <div class="flex flex-col md:flex-row md:justify-evenly px-6">
+            <div class="md:mx-6">
+                <p class="text-8xl font-bold text-gray-400">01</p>
+                <h6 class="pb-6 text-xl font-semibold">Get on board</h6>
+                <p class="text-gray-700">Set up a project in less than two minutes, add products from our catalogue or from any website with the Clip Tool and organise them visually on your board.</p>
+            </div>
+            <div class="md:mx-6">
+                <p class="text-8xl font-bold text-gray-400">02</p>
+                <h6 class="pb-6 text-xl font-semibold">Specify away</h6>
+                <p class="text-gray-700">Build specifications for various budget or style options with your team. Comment on products added by a colleague or reach out to our experts for alternatives.</p>
+            </div>
+            <div class="md:mx-6">
+                <p class="text-8xl font-bold text-gray-400">03</p>
+                <h6 class="pb-6 text-xl font-semibold">Let us do the heavy lifting </h6>
+                <p class="text-gray-700">Our team manages every supplier while you can track each item on the platform. We can also consolidate your delivery and organise on-site installation.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Platform -->
+    <section class="md:flex md:flex-row px-6 py-4 bg-pink-100">
+        <!-- Text Box -->
+        <div class="h-64 md:h-auto flex flex-col justify-around md:flex-1">
+            <p class="font-bold text-gray-600">Platform</p>
+            <h1 class="text-3xl lg:text-5xl font-semibold">Speed up your workflow</h1>
+            <p class="text-gray-700">Escape the spreadsheets and work with our intuitive procurement software for a smoother sourcing experience. It’s 2020 after all.</p>
+            <div class="py-4">
+                <a href="#" class="ml-1 px-3 py-2 rounded-full bg-gray-900 text-gray-200 font-semibold">Learn more</a>
+                <a href="#" class="ml-1 px-3 py-2 font-semibold">Book a demo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+            </div>
+        </div>
+        <!-- Image Box -->
+        <div class="hidden sm:block sm:-mx-6 md:-my-4 md:flex-1">
+            <img class="" src="./images/speedup.jpg" alt="Hero Image">
+        </div>
+    </section>
+    <!-- Why Us Light -->
+    <section class="py-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center gap-4 px-6 py-4">
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M0 0h9v9H0V0zm2 2v5h5V2H2zm-2 9h9v9H0v-9zm2 2v5h5v-5H2zm9-13h9v9h-9V0zm2 2v5h5V2h-5zm-2 9h9v9h-9v-9zm2 2v5h5v-5h-5z"/></svg>
+                <h6 class="text-xl font-semibold">Visual boards</h6>
+                <p class="text-gray-700">Manage your product selection in a Pinterest-style overview.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M0 2C0 .9.9 0 2 0h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm14 12h4V2H2v12h4c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2zM5 9l2-2 2 2 4-4 2 2-6 6-4-4z"/></svg>
+                <h6 class="text-xl font-semibold">Simple specifications</h6>
+                <p class="text-gray-700">Request, compare and edit multiple quotes for one project.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+                <h6 class="text-xl font-semibold">Transparent pricing</h6>
+                <p class="text-gray-700">See trade discounts and get instant quotes with delivery costs.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></svg>
+                <h6 class="text-xl font-semibold">Easy collaboration</h6>
+                <p class="text-gray-700">Discuss products and ideas with your colleagues or our team.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Created with Clipping -->
+    <section class="px-6 py-4 border-t-2 border-b-2">
+        <h6 class="py-2 text-xl font-semibold">Created with Clippings</h6>
+        <p class="py-2 text-gray-700">From sustainable hospitality spaces to complex office and hotel projects, learn how designers worked with us to build amazing spaces.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 py-4">
+            <div>
+                <div>
+                    <img src="./images/created-1.jpeg" alt="Created with Clippings">
+                </div>
+                <p class="pt-2 font-semibold">Prince Akatoki Hotel</p>
+                <p class="py-2 font-semibold text-gray-500">by B3 Designers</p>
+                <a href="#" class="py-2 text-gray-500">View project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4 fill-current"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+            </div>
+            <div>
+                <div>
+                    <img src="./images/created-2.jpeg" alt="Created with Clippings">
+                </div>
+                <p class="pt-2 font-semibold">Silo London</p>
+                <p class="py-2 font-semibold text-gray-500">by Nina+Co</p>
+                <a href="#" class="py-2 text-gray-500">View project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4 fill-current"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+            </div>
+            <div class="hidden sm:block">
+                <div>
+                    <img src="./images/created-3.jpeg" alt="Created with Clippings">
+                </div>
+                <p class="pt-2 font-semibold">Scarlet Lady</p>
+                <p class="py-2 font-semibold text-gray-500">by Virgin Voyages</p>
+                <a href="#" class="py-2 text-gray-500">View project <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4 fill-current"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+            </div>
+            <div class="hidden sm:block">
+                <div>
+                    <img src="./images/created-4.jpeg" alt="Created with Clippings">
+                </div>
+                <p class="pt-2 font-semibold">23 Capital</p>
+                <p class="py-2 font-semibold text-gray-500">by HUT Architecture</p>
+                <a href="#" class="py-2 text-gray-500">Coming soon</a>
+            </div>
+        </div>
+    </section>
+    <!-- Sourcing -->
+    <section>
+        <!-- Text Box--Light -->
+        <div class="h-64 md:h-auto px-6 py-4 flex flex-col items-center justify-around bg-gray-100">
+            <p class="font-bold text-gray-600">Sourcing</p>
+            <h1 class="text-3xl lg:text-5xl font-semibold">Discover millions of products</h1>
+            <p class="text-gray-700">Browse furniture and lighting collections from the leading contemporary design and workplace brands.</p>
+            <div class="py-4">
+                <a href="#" class="ml-1 px-3 py-2 rounded-full bg-gray-900 text-gray-200 font-semibold">Sign up</a>
+                <a href="#" class="ml-1 px-3 py-2 font-semibold">Book a demo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+            </div>
+        </div>
+        <!-- Image-Box -->
+        <div class="opacity-25 w-10/12 h-full flex items-center justify-end mx-auto py-2 text-gray-600 bg-gray-300 rounded-tr round-tl shadow-lg ">
+            <svg class="h-6 w-6 px-1 fill-current" x="0px" y="0px" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1" /></svg>
+
+            <svg class="h-6 w-6 px-1 fill-current" viewBox="0 0 10 10"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg>
+
+            <svg class="h-6 w-6 px-1 fill-current" viewBox="0 0 10 10"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1" /></svg>
+        </div>
+        <img class=".sourcing w-10/12 h-64 md:h-2/3vh mx-auto bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed" src="./images/sourcing.jpg">
+        </img>   
+        
+        <!-- Logos -->
+        <div class="h-64 px-6 py-4 bg-gray-900">
+            <div class="h-full grid grid-cols-5 items-center">
+                <img src="./images/sourcing-1.png" alt="">
+                <img src="./images/sourcing-2.png" alt="">
+                <img src="./images/sourcing-3.png" alt="">
+                <img src="./images/sourcing-4.png" alt="">
+                <img src="./images/sourcing-5.png" alt="">
+                <img src="./images/sourcing-6.png" alt="">
+                <img src="./images/sourcing-7.png" alt="">
+                <img src="./images/sourcing-8.png" alt="">
+                <img src="./images/sourcing-9.png" alt="">
+                <div class="flex items-center justify-center text-sm text-gray-200">600+ more</div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- Why Us Dark -->
+    <section class="py-4 border-gray-300 border-t bg-gray-900">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center gap-4 px-6 py-4">
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center text-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6 fill-current"><path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/></svg>
+                <h6 class="text-xl font-semibold">Every type of project</h6>
+                <p class="text-gray-500">Find products for residential, hotels, F&B or office interiors.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center text-gray-200">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6 fill-current"><path d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm1-5h1a3 3 0 0 0 0-6H7.99a1 1 0 0 1 0-2H14V5h-3V3H9v2H8a3 3 0 1 0 0 6h4a1 1 0 1 1 0 2H6v2h3v2h2v-2z"/></svg>
+                <h6 class="text-xl font-semibold">Instant trade pricing</h6>
+                <p class="text-gray-500">See trade discounts without requesting a quote.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center text-gray-200">   
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6 fill-current"><path d="M18 16h2v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-1h2V4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v12zM4 4v9h12V4H4zm4 11v1h4v-1H8z"/></svg>
+                <h6 class="text-xl font-semibold">Workplace expertise</h6>
+                <p class="text-gray-500">Source Herman Miller, Steelcase and Haworth from one supplier.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center text-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6 fill-current"><path d="M9 11.73a2 2 0 1 1 2 0V20H9v-8.27zm5.24 2.51l-1.41-1.41A3.99 3.99 0 0 0 10 6a4 4 0 0 0-2.83 6.83l-1.41 1.41a6 6 0 1 1 8.49 0zm2.83 2.83l-1.41-1.41a8 8 0 1 0-11.31 0l-1.42 1.41a10 10 0 1 1 14.14 0z"/></svg>
+                <h6 class="text-xl font-semibold">Source anything</h6>
+                <p class="text-gray-500">Upload any product to your project and we'll get it for you.</p>
+            </div>
+        </div>
+    </section>
+    <!-- See it Clip It -->
+    <section>
+        <div class="flex flex-col md:flex-row">
+            <div class="h-64 md:h-2/3vh md:w-1/2 flex flex-col items-start justify-around px-6 py-4">
+                <h1 class="text-3xl lg:text-5xl font-semibold">See it. <span class="text-gray-600">Clip It.</span></h1>
+                <p class="text-gray-700">Found something elsewhere? With our Clip Tool, you can add any product from any website to your project. We’ll source it for you.</p>
+                <div class="py-4">
+                    <a href="#" class="ml-1 px-3 py-2 rounded-full bg-gray-900 text-gray-200 font-semibold">Add to Chrome</a>
+                    <a href="#" class="ml-1 px-3 py-2 font-semibold">Book a demo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+                </div>
+                <p class="text-sm text-gray-700">Currently available for Google Chrome.</p>
+            </div>
+            <div class="relative p-10">
+                <img class="h-72 md:h-96 w-full object-cover" src="./images/seeit-2.jpeg" alt="">
+                <img class="absolute left-0 bottom-0 transform -translate-y-20 md:-translate-y-32 h-40 sm:h-56 md:h-72" src="./images/seeit-1.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- We Take It Personally -->
+    <section>
+        <div class="md:h-2/3vh flex flex-col md:flex-row">
+            <div class="md:w-1/2 h-72 md:h-auto flex flex-col items-start justify-around px-6 py-4 bg-gray-900">
+                <p class="font-bold text-gray-600">Services</p>
+                <h1 class="text-3xl lg:text-5xl font-semibold text-gray-200">We take it <br>personally</h1>
+                <p class="text-gray-600">Our team is here to help you at every stage of your project. Like your new best colleague.</p>
+                <div class="py-4">
+                    <a href="#" class="ml-1 px-3 py-2 rounded-full bg-gray-100 text-gray-900  font-semibold">Sign up</a>
+                    <a href="#" class="ml-1 px-3 py-2 font-semibold text-gray-200">Book a demo <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4 fill-current"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+                </div>
+            </div>
+            <img class="md:w-1/2" src="./images/wetakeitpersonally.jpg"></img>
+        </div>
+    </section>
+    <!-- Why Us Light -->
+    <section class="py-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center gap-4 px-6 py-4">
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M17 11v3l-3-3H8a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1zm-3 2v2a2 2 0 0 1-2 2H6l-3 3v-3H2a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h2v3a4 4 0 0 0 4 4h6z"/></svg>
+                <h6 class="text-xl font-semibold">Let’s communicate</h6>
+                <p class="text-gray-700">On platform, by email or via phone, we're here for you on every channel.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M7 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1c2.15 0 4.2.4 6.1 1.09L12 16h-1.25L10 20H4l-.75-4H2L.9 10.09A17.93 17.93 0 0 1 7 9zm8.31.17c1.32.18 2.59.48 3.8.92L18 16h-1.25L16 20h-3.96l.37-2h1.25l1.65-8.83zM13 0a4 4 0 1 1-1.33 7.76 5.96 5.96 0 0 0 0-7.52C12.1.1 12.53 0 13 0z"/></svg>
+                <h6 class="text-xl font-semibold">Expert advice</h6>
+                <p class="text-gray-700">Our team knows the industry and are experienced problem solvers.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M11 9h4v2h-4v4H9v-4H5V9h4V5h2v4zm-1 11a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/></svg>
+                <h6 class="text-xl font-semibold">Consolidated delivery</h6>
+                <p class="text-gray-700">We can collect multi-brand orders and ship them to your site in one go.</p>
+            </div>
+            <div class="h-32 lg:h-40 px-16 lg:px-8 flex flex-col justify-around items-center text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-6"><path d="M15 2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h2V0h2v2h6V0h2v2zM3 6v12h14V6H3zm6 5V9h2v2h2v2h-2v2H9v-2H7v-2h2z"/></svg>
+                <h6 class="text-xl font-semibold">Installation service</h6>
+                <p class="text-gray-700">Our project managers can help you with installing products on-site.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Lets have a one to one -->
+    <section class="px-6 py-4">
+        <div class="flex flex-col">
+            <div class="w-full md:w-2/3 h-72 md:h-auto mx-auto flex flex-col items-center justify-around px-6 py-4">
+                <h1 class="text-3xl lg:text-5xl font-semibold">Let's have a one to one</h1>
+                <p class="text-gray-700">Get your personal introduction to the platform in a 15 minute demo. Schedule yours today to see how you and your business will benefit from using Clippings.</p>
+                <div class="py-4">
+                    <a href="#" class="ml-1 px-3 py-2 rounded-full bg-gray-900 text-gray-200 font-semibold">Book a demo</a>
+                    <a href="#" class="ml-1 px-3 py-2 font-semibold">Try it now <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="inline-block h-4"><polygon points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707 11.515 18.485 10.101 17.071 16.172 11 0 11 0 9"/></svg></a>
+                </div>
+            </div>
+            <img class=" w-full md:w-2/3 h-72 md:h-1/2vh mx-auto bg-cover bg-center bg-no-repeat rounded-lg" src="./images/one2one.jpg">
+            </img>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="h-auto md:h-80 flex flex-col justify-between px-6 py-4 bg-gray-900 text-gray-200">
+        <!-- Top -->
+        <div class="flex flex-col md:flex-row items-start md:justify-between">
+        <!-- Logo -->
+        <div class="md:w-1/2">
+            <a href="#" id="logo" class="pl-6 text-3xl font-semibold">Clippings</a>
+        </div>
+        <div class="md:w-1/2 md:flex md:justify-around mt-6 md:mt-0">
+            <div class="p-6 md:py-0">
+                <h6 class="text-gray-500">Company</h6>
+                <ul class="mt-3">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="p-6 md:py-0">
+                <h6 class="text-gray-500">Follow</h6>
+                <ul class="mt-3">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="p-6 md:py-0">
+                <h6 class="text-gray-500">Legal</h6>
+                <ul class="mt-3">
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Term of sale</a></li>
+                    <li><a href="#">Candidate policy</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <!-- Bottom -->
+        <div class="p-6 text-sm text-gray-500">
+            &copy; Clippings Ltd. Registered in England and Wales at Unit 407 Curtain House, 134-146 Curtain Road, London, EC2A 3AR
+        </div>
+    </footer>
+</body>
+</html>
